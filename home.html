@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shrine (MDC Web Example App)</title>
+  <shlink rel="shortcut icon" href="https://material.io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="bundle-home.css">
+</head>
+<body> 
+<header class="crane-header">
+Tag Data
+</header>
+<main class="crane-main">
+<form method="post" action="http://129.146.55.189:8000/tumblr_posts_by_hashtag/" id="HWAC-tag-form">
+<div class="crane-rowi hashtag_to_search">
+<div class="crane-field hashtag_to_search">
+HashTag: <input class="mdc-text-field__input" id="crane-tags-input" type="text" name="hashtag_to_search" required autofocus><br>
+<label class="mdc-floating-label" for="crane-tags-input">Tags</label>
+<div class="mdc-line-ripple"></div>
+</div>
+</div>
+<div class="crane-row">
+<div class="crane-field">
+<input type="date" class="mdc-text-field__input" id="crane-startdate-input" value="2019-04-01" min="2019-01-01" max="2030-12-31" required>
+<label class="mdc-floating-label" for="crane-startdate-input">Start Date yyyy-mm-dd</label>
+<div class="mdc-line-ripple"></div>
+</div>
+</div>
+<div class="crane-row">
+<div class="crane-field">
+<input type="date" class="mdc-text-field__input" id="crane-enddate-input" value="2019-04-01" min="2019-
+01-01" max="2030-12-31" required>
+<label class="mdc-floating-label" for="crane-enddate-input">End Date yyyy-mm-dd</label>
+<div class="mdc-line-ripple"></div>
+</div>
+</div>
+  <div class="crane-row crane-row--submit">
+        <button type="submit" class="mdc-button mdc-button--raised">
+<span class=mdc-button__label">Save</span>
+</button>
+      </div>
+    </form>
+</main>
+<script src="bundle-home.js" async></script>
+</body>
+</html>
